@@ -1,0 +1,2 @@
+$('#comments_<%= @book.id %>').html("<%= j(render partial: 'book_comments/comments', locals: {book: @book}) %>");
+$('.js-form')[0].reset();
